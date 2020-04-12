@@ -1,5 +1,10 @@
 import numpy as np
 
+
+def foo(*aaa):
+    aaa=1
+    return
+
 if __name__ == "__main__":
     print("hello")
     ndarr = np.asarray([[1, 2], [3, 4], [5, 2]])
@@ -19,4 +24,8 @@ if __name__ == "__main__":
 
     aa = [0,3,5]
     print(np.transpose(np.nonzero(aa)))
+
+    k=[[1,2]]
+    k = np.append(k,[[3,4]],axis=0)
+    print(k)
 
